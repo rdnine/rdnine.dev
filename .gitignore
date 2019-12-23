@@ -1,0 +1,8 @@
+
+backoffice/config/
+
+backoffice/composer.lock
+
+backoffice/vendor/
+
+uploads/restricted/baapps/

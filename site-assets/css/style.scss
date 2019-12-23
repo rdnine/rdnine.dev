@@ -1,0 +1,32 @@
+@import './fonts';
+@import './mixins';
+@import './utilities';
+@import './btn';
+@import './header';
+@import './footer';
+@import './pages';
+
+
+html {font-size: $fs-base; scroll-behavior: smooth;}
+
+.f {
+	&-title {font-family: $f-oswald;}
+	&-text {font-family: $f-montserrat;}
+	&w-300 {font-weight: 300;}
+	&w-400 {font-weight: 400;}
+	&w-700 {font-weight: 700;}
+	&s-xs {font-size: $fs-xs;}
+	&s-sm {font-size: $fs-sm;}
+	&s-md {font-size: $fs-md;}
+	&s-lg {font-size: $fs-lg;}
+	&s-xl {font-size: $fs-xl;}
+}
+
+.c {
+	&-yellow {color: $sublime-yellow;}
+}
+
+#rd {
+	overflow-x: hidden;
+	
+}

@@ -1,0 +1,11 @@
+{
+	"fa-icon": "fontawesome css class for icon",
+	"img": "",
+	"sub-items": {
+		"sub title here": {
+			"url": "value from $a here, pe.:"
+		}
+	},
+	"sidebar": true,
+	"dropdown": false
+}
