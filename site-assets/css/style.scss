@@ -7,13 +7,15 @@
 @import './pages';
 
 
-html {font-size: $fs-base; scroll-behavior: smooth;}
+html {font-size: $fs-base; font-family: $f-montserrat; scroll-behavior: smooth;}
 
 .f {
 	&-title {font-family: $f-oswald;}
 	&-text {font-family: $f-montserrat;}
 	&w-300 {font-weight: 300;}
 	&w-400 {font-weight: 400;}
+	&w-500 {font-weight: 500;}
+	&w-600 {font-weight: 600;}
 	&w-700 {font-weight: 700;}
 	&s-xs {font-size: $fs-xs;}
 	&s-sm {font-size: $fs-sm;}

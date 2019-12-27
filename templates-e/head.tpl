@@ -43,6 +43,10 @@
 <link rel="stylesheet" href="{c2r-libs}/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 <!-- end fontawesome -->
 
+<!-- begin line awesome -->
+<link rel="stylesheet" href="{c2r-libs}/line-awesome-1.3.0/1.3.0/css/line-awesome.min.css">
+<!-- end line awesome -->
+
 <!-- begin sweetalert2 -->
 <link rel="stylesheet" href="{c2r-libs}/node_modules/sweetalert2/dist/sweetalert2.min.css">
 <script type="text/javascript" src="{c2r-libs}/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>

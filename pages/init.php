@@ -1,11 +1,9 @@
 <?php
 
-$page_tpl = bo3::load("home.tpl");
+$page_tpl = bo3::load("init.tpl");
 
 include "pages-e/header.php";
 include "pages-e/footer.php";
-
-$header_mode = "model-1";
 
 /* last thing */
 $tpl = bo3::c2r([
