@@ -13,5 +13,5 @@ if (isset($_GET["pg"]) && !empty($_GET["pg"])) {
 } else if (isset(getopt(null, ["pg::"])["pg"])) {
 	$pg = strtolower(getopt(null, ["pg::"])["pg"]);
 } else {
-	$pg = "home";
+	$pg = $cfg->system->start;
 }
