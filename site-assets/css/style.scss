@@ -7,11 +7,11 @@
 @import './pages';
 
 
-html {font-size: $fs-base; font-family: $f-montserrat; scroll-behavior: smooth;}
+html {font-size: $fs-base; font-family: $f-roboto; scroll-behavior: smooth;}
 
 .f {
-	&-title {font-family: $f-oswald;}
-	&-text {font-family: $f-montserrat;}
+	&-title {font-family: $f-roboto-c;}
+	&-text {font-family: $f-roboto;}
 	&w-300 {font-weight: 300;}
 	&w-400 {font-weight: 400;}
 	&w-500 {font-weight: 500;}

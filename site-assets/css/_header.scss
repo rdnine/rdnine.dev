@@ -21,7 +21,7 @@ header {
                     margin-right: 5px;
 
                     & .nav-link:not(.special-link) {
-                        font-family: $f-montserrat;
+                        font-family: $f-roboto;
                         font-weight: 400;
                         font-size: 1.6rem;
                         color: $french-blue;
@@ -53,7 +53,7 @@ header {
                     }
 
                     & .special-link {
-                        font-family: $f-oswald;
+                        font-family: $f-roboto-c;
                         color: #fff;
                         font-size: 1.6rem;
                         font-weight: 600;
@@ -71,7 +71,7 @@ header {
                     }
 
                     & .double-link {
-                        font-family: $f-oswald;
+                        font-family: $f-roboto-c;
                         color: $dark-slate;
                         font-size: 1.8rem;
                         font-weight: 600;
