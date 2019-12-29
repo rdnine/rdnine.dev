@@ -1,17 +1,29 @@
 /* FONTS */
 $f-roboto: 'Roboto', sans-serif;
-$f-roboto-c: 'Roboto', sans-serif;
+$f-roboto-c: 'Roboto Condensed', sans-serif;
 $fs-base: 10px;
-$fs-xs: 1.2rem;
-$fs-sm: 1.6rem;
-$fs-md: 2rem;
-$fs-lg: 2.8rem;
-$fs-xl: 3.2rem;
+$fs-xs: 1.8rem;
+$fl-xs: 2.2rem;
+$fs-sm: 2.6rem;
+$fl-sm: 3.2rem;
+$fs-md: 3.2rem;
+$fl-md: 3.6rem;
+$fs-lg: 4.2rem;
+$fl-lg: 4.6rem;
+$fs-xl: 5.6rem;
+$fl-xl: 6rem;
+
+$f-h1: bold $fs-xl $f-roboto-c;
+$f-h2: bold $fs-lg $f-roboto-c;
+$f-h3: normal $fs-md $f-roboto;
+$f-h4: normal $fs-sm $f-roboto;
+$f-h5: normal $fs-xs $f-roboto;
+$f-p: normal $fs-xs $f-roboto;
 
 
 /* COLORS */
 $sublime-yellow: #feda6a;
 $french-blue: #3a4660;
 $dark-slate: #1d1e22;
-$silver-fox: #d4d4dc;
+$silver-fox: #b4b4b4;
 $deep-grey: #393f4d;
