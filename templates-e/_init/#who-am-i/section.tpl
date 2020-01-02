@@ -89,6 +89,7 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
+                            <a href="#" class="btn double-link"><span class="double">MY EXPERIENCE</span>KNOW +</a>
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="svg-placeholder">
@@ -163,15 +164,7 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
-                        </div>
-                    </div>
-                    <div class="spacer all-30"></div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-
-                        </div>
-                        <div class="col-12 col-lg-6">
-
+                            <a href="#" class="btn double-link"><span class="double">MY STORY</span>KNOW +</a>
                         </div>
                     </div>
                     <div class="spacer all-60"></div>
@@ -182,6 +175,6 @@
                 </div>
             </div>
         </div>
-        <div class="spacer all-90"></div>
+        <div class="spacer all-120"></div>
     </div>
 </section>
