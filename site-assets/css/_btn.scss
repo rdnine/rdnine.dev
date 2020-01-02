@@ -99,13 +99,14 @@
 		font-family: $f-roboto-c;
 		font-size: 1.8rem;
 		font-weight: 600;
+		color: #fff;
 		text-decoration: none;
 		transition: all 0.5s;
 		position: relative;
 		padding: 1.2rem 4.2rem;
 
 		&:hover {
-			color: rgba(57, 63, 77, 1);
+			color: #fff;
 			text-decoration: none;
 
 			&::before {
@@ -132,7 +133,8 @@
 			z-index: -1;
 			border: 2px solid $sublime-yellow;
 			background-color: $sublime-yellow;
-			transition: all 0.3s;
+			transition: all 0.5s;
+			transform: scaleX(1);
 		}
 
 		& .double {

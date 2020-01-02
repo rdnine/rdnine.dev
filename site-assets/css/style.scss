@@ -47,6 +47,34 @@ img {max-width: 100%;}
 #rd {
 	overflow-x: hidden;
 
+	& a {
+		font-family: $f-roboto;
+		font-weight: 600;
+		color: $sublime-yellow;
+		font-size: 1.8rem;
+		line-height: 1.8rem;
+		text-decoration: none;
+		position: relative;
+		transition: all 0.5s;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			background: $sublime-yellow;
+			visibility: visible;
+			transform: scaleX(0);
+			transition: all .3s ease-in-out 0s;
+		}
+
+		&:hover::before {
+			transform: scaleX(1);
+		}
+	}
+
 	& h1 {
 		font: $f-h1;
 		line-height: $fl-xl;
