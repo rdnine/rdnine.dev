@@ -14,6 +14,6 @@ $tpl = bo3::c2r([
 	"section-hello" => bo3::loade("_init/hello/section.tpl"),
 	"section-whoami" => bo3::loade("_init/who-am-i/section.tpl"),
 	"section-whatido" => bo3::loade("_init/what-i-do/section.tpl"),
-
-	"mdl-cta" => $mdl_cta
+	"mdl-cta" => $mdl_cta,
+	"section-projects" => bo3::loade("_init/projects/section.tpl")
 ], $page_tpl);

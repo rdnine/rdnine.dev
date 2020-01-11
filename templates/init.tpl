@@ -13,7 +13,7 @@
         {c2r-section-whoami}
         {c2r-section-whatido}
         {c2r-mdl-cta}
-        <div class="spacer all-150"></div>
+        {c2r-section-projects}
         {c2r-footer}
     </main>
 </body>

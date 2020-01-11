@@ -47,7 +47,7 @@ img {max-width: 100%;}
 #rd {
 	overflow-x: hidden;
 
-	& a {
+	& a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link) {
 		font-family: $f-roboto;
 		font-weight: 600;
 		color: $sublime-yellow;
@@ -73,6 +73,14 @@ img {max-width: 100%;}
 		&:hover::before {
 			transform: scaleX(1);
 		}
+	}
+
+	& .block-link {
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		z-index: 1500;
+		transition: all 0.5s;
 	}
 
 	& h1 {

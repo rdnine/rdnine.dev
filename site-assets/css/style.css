@@ -365,7 +365,8 @@ footer .social-list li a i {
   position: relative;
   margin-left: auto;
   display: block;
-  padding: 0.5rem;
+  -webkit-box-shadow: -8px 8px 20px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: -8px 8px 20px -2px rgba(0, 0, 0, 0.2);
 }
 
 #rd__init #hello .img-placeholder::before {
@@ -380,7 +381,6 @@ footer .social-list li a i {
 }
 
 #rd__init #hello .img-placeholder::after {
-  content: '';
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -433,7 +433,6 @@ footer .social-list li a i {
 #rd__init #hello .text h1 span {
   color: #feda6a;
   position: relative;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 #rd__init #hello .text h1 span under {
@@ -579,6 +578,88 @@ footer .social-list li a i {
   margin-bottom: 30px;
 }
 
+#rd__init #projects {
+  position: relative;
+}
+
+#rd__init #projects .project-block {
+  display: block;
+  width: 100%;
+  height: 280px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+#rd__init #projects .project-block.top {
+  height: 600px;
+}
+
+#rd__init #projects .project-block.top .text h2 {
+  font-size: 4.2rem !important;
+  line-height: 4.2rem !important;
+}
+
+#rd__init #projects .project-block img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#rd__init #projects .project-block .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#rd__init #projects .project-block .content::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 70, 96, 0.5);
+}
+
+#rd__init #projects .project-block .content .text {
+  position: relative;
+  max-width: 320px;
+  height: auto;
+  padding: 30px;
+  z-index: 2;
+  text-align: center;
+}
+
+#rd__init #projects .project-block .content .text h2 {
+  color: #fff;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+
+#rd__init #projects .project-block:hover .content {
+  opacity: 1;
+}
+
 #rd #cta {
   background-color: #3a4660;
   color: #fff;
@@ -699,7 +780,7 @@ img {
   overflow-x: hidden;
 }
 
-#rd a {
+#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link) {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #feda6a;
@@ -711,7 +792,7 @@ img {
   transition: all 0.5s;
 }
 
-#rd a::before {
+#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link)::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -726,9 +807,20 @@ img {
   transition: all .3s ease-in-out 0s;
 }
 
-#rd a:hover::before {
+#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link):hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+#rd .block-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #rd h1 {
