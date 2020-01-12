@@ -14,6 +14,7 @@
         {c2r-section-whatido}
         {c2r-mdl-cta}
         {c2r-section-projects}
+        {c2r-section-blog}
         {c2r-footer}
     </main>
 </body>

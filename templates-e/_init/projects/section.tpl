@@ -5,6 +5,7 @@
             <div class="col tacenter">
                 <h1 class="mini">Projects</h1>
                 <h2>A bit of what i can do</h2>
+                <p>from this to that</p>
             </div>
         </div>
         <div class="spacer xs-30 sm-60"></div>

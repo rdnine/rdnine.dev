@@ -12,7 +12,7 @@
                      <h1>I'm <span>Rafael<br> Duarte</span></h1>
                      <h2>A Freelance Web Developer</h2>
                      <div class="spacer all-30"></div>
-                     <a href="{c2r-path}/{c2r-lg}/init/#contact" class="special-link">HIRE ME!</a>
+                     <a href="mailto:hello@rdnine.dev?subject=Hiring%20your%20services&body=Name%3A%0AContact%20(Optional)%3A%0ASource%20(where%20do%20you%20know%20me%20from%3F)%3A%0A%0AMessage%3A" class="special-link">HIRE ME!</a>
                  </div>
              </div>
          </div>

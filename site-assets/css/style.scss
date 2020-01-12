@@ -47,7 +47,7 @@ img {max-width: 100%;}
 #rd {
 	overflow-x: hidden;
 
-	& a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link) {
+	& a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link):not(.cta-btn) {
 		font-family: $f-roboto;
 		font-weight: 600;
 		color: $sublime-yellow;
@@ -87,18 +87,21 @@ img {max-width: 100%;}
 		font: $f-h1;
 		line-height: $fl-xl;
 		color: $dark-slate;
+		transition: all 0.5s;
 	}
 
 	& h2 {
 		font: $f-h2;
 		line-height: $fl-lg;
 		color: $dark-slate;
+		transition: all 0.5s;
 	}
 
 	& h3 {
 		font: $f-h3;
 		line-height: $fl-md;
 		color: $dark-slate;
+		transition: all 0.5s;
 	}
 
 	& h4 {
@@ -117,6 +120,7 @@ img {max-width: 100%;}
 		font: $f-p;
 		line-height: $fl-sm;
 		color: $silver-fox;
+		transition: all 0.5s;
 	}
 
 	& .bg-silver {

@@ -566,8 +566,8 @@ footer .social-list li a i {
   padding: 3.2rem 2rem;
   background-color: #fff;
   text-align: center;
-  -webkit-box-shadow: 1px 1px 15px -5px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 15px -5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 #rd__init #what-i-do .content-box p {
@@ -658,6 +658,44 @@ footer .social-list li a i {
 
 #rd__init #projects .project-block:hover .content {
   opacity: 1;
+}
+
+#rd__init #blog {
+  position: relative;
+}
+
+#rd__init #blog .post-block .img-placeholder {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 15px;
+}
+
+#rd__init #blog .post-block .img-placeholder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#rd__init #blog .post-block .date {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #3a4660;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#rd__init #blog .post-block .text {
+  position: relative;
+}
+
+#rd__init #blog .post-block .text:hover h2 {
+  color: #3a4660;
 }
 
 #rd #cta {
@@ -780,7 +818,7 @@ img {
   overflow-x: hidden;
 }
 
-#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link) {
+#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link):not(.cta-btn) {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #feda6a;
@@ -792,7 +830,7 @@ img {
   transition: all 0.5s;
 }
 
-#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link)::before {
+#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link):not(.cta-btn)::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -807,7 +845,7 @@ img {
   transition: all .3s ease-in-out 0s;
 }
 
-#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link):hover::before {
+#rd a:not(.navbar-brand):not(.nav-link):not(.special-link):not(.double-link):not(.block-link):not(.cta-btn):hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -827,18 +865,24 @@ img {
   font: bold 5.6rem "Roboto Condensed", sans-serif;
   line-height: 6rem;
   color: #1d1e22;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #rd h2 {
   font: bold 4.2rem "Roboto Condensed", sans-serif;
   line-height: 4.6rem;
   color: #1d1e22;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #rd h3 {
   font: normal 3.2rem "Roboto", sans-serif;
   line-height: 3.6rem;
   color: #1d1e22;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #rd h4 {
@@ -857,6 +901,8 @@ img {
   font: normal 1.8rem "Roboto", sans-serif;
   line-height: 3.2rem;
   color: #b4b4b4;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #rd .bg-silver {

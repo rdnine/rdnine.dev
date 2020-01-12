@@ -209,7 +209,7 @@
                 padding: 3.2rem 2rem;
                 background-color: #fff;
                 text-align: center;
-                box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.3);
+                box-shadow: -5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 
                 & p {
                     color: $dark-slate;
@@ -287,6 +287,44 @@
 
                 &:hover .content {
                     opacity: 1;
+                }
+            }
+        }
+
+        & #blog {
+            position: relative;
+
+            & .post-block {
+                & .img-placeholder {
+                    position: relative;
+                    width: 100%;
+                    height: 350px;
+                    margin-bottom: 15px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                & .date {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-size: 1.4rem;
+                    line-height: 1.4rem;
+                    color: $french-blue;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+
+                & .text {
+                    position: relative;
+
+                    &:hover h2 {
+                        color: $french-blue;
+                    }
                 }
             }
         }
