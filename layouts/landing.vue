@@ -1,7 +1,7 @@
 <template>
-  <div class="wrapper">
-    <Nuxt />
-  </div>
+    <div class="w-100 min-h-100vh bg-dark p-lr-10vw">
+        <Nuxt />
+    </div>
 </template>
 
 <style lang="scss">
@@ -22,12 +22,4 @@ html {
     box-sizing: border-box;
     margin: 0;
 }
-
-.wrapper {
-    width: 100%; 
-    min-height: 100vh;
-    padding: 0 10vw;
-    background-color: $bgDark;
-}
-
 </style>
