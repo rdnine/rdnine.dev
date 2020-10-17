@@ -1,9 +1,9 @@
 <template>
-  <img class="NuxtLogo" src="logo_w.png" alt="rdnine"/>
+  <img class="logo" src="logo_w.png" alt="rdnine.dev | Web Developer"/>
 </template>
 
 <style scoped>
-.NuxtLogo {
+.logo {
   animation: 1s appear;
   margin: auto;
   max-height: 250px;
