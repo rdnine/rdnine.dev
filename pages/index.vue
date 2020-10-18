@@ -28,12 +28,28 @@ html {
 
 #index {
   article {
+    width: 100%;
     max-width: 500px;
-    height: 75vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    @media screen and (max-height: 900px) {
+      min-height: 60vh;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 575px) {
+      justify-content: flex-start;
+      margin-bottom: 60px;
+    }
+  }
+
+  footer {
+    margin-bottom: 30px;
   }
 
   h1 {
