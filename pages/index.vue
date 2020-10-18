@@ -50,7 +50,7 @@ html {
     color: #feda6a;
   }
 
-  h6 {
+  h3 {
     color: #fff;
     margin-top: 15px;
     margin-bottom: 30px;
