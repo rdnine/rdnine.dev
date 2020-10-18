@@ -11,11 +11,25 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        name: 'keywords',
+        content:
+          'developer, coder, programmer, web, web developer, tech, vue, nuxt, php, full-stack, front-end, back-end',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          "I'm a Full-Stack Web Developer from Portugal, learning and building as much as I can. Come and see the goddies!",
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap'}
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap',
+      },
     ],
   },
 
@@ -40,7 +54,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -49,11 +63,9 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
-  css: [
-    '@/assets/scss/main.scss'
-  ],
+  css: [],
 
   styleResources: {
-    scss: ['@/assets/scss/*/*.scss']
+    scss: ['@/assets/scss/*/*.scss'],
   },
 }
