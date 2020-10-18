@@ -6,6 +6,7 @@
       width="50"
       height="60"
       alt="rdnine.dev | Web Developer"
+      title="rdnine.dev | Logo"
     />
     <div class="block h-16 w-full"></div>
     <nuxt-content :document="data" />
