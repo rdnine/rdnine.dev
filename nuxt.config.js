@@ -7,6 +7,9 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
+    htmlAttrs: {
+      lang: 'en',
+    },
     title: 'Rafael Duarte | Web Developer & Tech Lover',
     meta: [
       { charset: 'utf-8' },
@@ -54,18 +57,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/style-resources',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    liveEdit: false,
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-
-  css: [],
-
-  styleResources: {
-    scss: ['@/assets/scss/*/*.scss'],
-  },
 }
