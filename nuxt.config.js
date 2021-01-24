@@ -46,7 +46,15 @@ export default {
     plugins: [],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)
-    components: true,
+    components: {
+        dirs: [
+            '~/components',
+            {
+                path: '~/components/links',
+                prefix: 'Links',
+            },
+        ],
+    },
 
     // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
     buildModules: [
@@ -60,7 +68,18 @@ export default {
     modules: [
         // https://go.nuxtjs.dev/content
         '@nuxt/content',
+        '@nuxtjs/axios',
+        '@nuxtjs/proxy',
     ],
+
+    proxy: {
+        '/api/': {
+            target: 'https://api.rdnine.dev/',
+            pathRewrite: {
+                '^/api/': '/',
+            },
+        },
+    },
 
     // Content module configuration (https://go.nuxtjs.dev/config-content)
     content: {
