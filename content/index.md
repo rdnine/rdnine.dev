@@ -7,7 +7,7 @@ description: I'm a Full-Stack Web Developer from Portugal, learning and building
 
 ## I'm Rafael
 
-### A web developer from 🇵🇹 <br> I'm focused on building something cool for you.
+### A web developer from 🇵🇹 <br> I do magic on the web, one line of code at a time.
 
 In the mean time you can follow or reach me here: 
 <a href="https://links.rdnine.dev/" target="_blank" rel="noopener" title="Links">links.rdnine.dev</a>
