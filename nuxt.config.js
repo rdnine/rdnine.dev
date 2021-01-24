@@ -23,7 +23,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "I'm a Full-Stack Web Developer from Portugal, learning and building as much as I can. Come and see the goddies!",
+          "I'm a Web Developer from Portugal, learning and building as much as I can. Come and see the goddies!",
       },
     ],
     link: [
