@@ -96,4 +96,8 @@ export default {
             maxAge: 60 * 60 * 24 * 365 * 1000,
         },
     },
+
+    static: {
+        prefix: false,
+    },
 }
