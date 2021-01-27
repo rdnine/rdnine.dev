@@ -133,6 +133,10 @@ header {
     padding: 45px 30px;
 }
 
+footer {
+    padding: 15px 30px 30px 30px;
+}
+
 .placeholder {
     width: 150px;
     height: 150px;
