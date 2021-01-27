@@ -24,6 +24,55 @@
                 :labelUnder="leaf.description"
             />
         </div>
+        <footer>
+            <ul class="social-list">
+                <li>
+                    <a
+                        href="https://instagram.com/rdnine.dev"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <img
+                            src="/instagram.svg"
+                            alt="Instagram"
+                            title="Follow the adventure"
+                            width="50"
+                            height="50"
+                        />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/rafaeljfduarte/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <img
+                            src="/linkedin.svg"
+                            alt="Linkedin"
+                            title="It's Professional"
+                            width="50"
+                            height="50"
+                        />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="skype:rafaeljfduarte?call"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <img
+                            src="/skype.svg"
+                            alt="Skype"
+                            title="Call me, mabye"
+                            width="50"
+                            height="50"
+                        />
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </div>
 </template>
 
@@ -34,7 +83,6 @@ export default Vue.extend({
     layout: 'tree',
     async asyncData({ $axios }) {
         const data = await $axios.$get('/api/v1/links/all')
-        console.log(data)
         return { data }
     },
 })
@@ -46,13 +94,37 @@ export default Vue.extend({
     max-width: 560px;
     min-height: 100vh;
     margin: auto;
-    box-shadow: 0 0 15px rgba(0,0,0,.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 
     .leafs {
         width: 100%;
         max-width: 450px;
         margin: auto;
-        padding: 30px 15px 120px;
+        padding: 30px 15px 30px;
+    }
+
+    .social-list {
+        width: 100%;
+        max-width: 450px;
+        margin: auto;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+
+            a {
+                text-align: center;
+                img {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+            }
+        }
     }
 }
 
