@@ -35,6 +35,8 @@ a {
     margin-bottom: 30px;
     z-index: 1;
     text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .top {
