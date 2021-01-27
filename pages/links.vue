@@ -8,13 +8,22 @@
                     title="Hey! It's me!"
                 />
             </div>
-            <span>@rdnine</span>
+            <span class="text-2xl">@rdnine</span>
             <div class="description">
                 <h1>Rafael Duarte</h1>
                 <span class="separator"></span>
                 <h2>Web Developer</h2>
             </div>
         </header>
+        <div class="leafs">
+            <LinksLeaf
+                v-for="leaf in data.links"
+                :key="leaf.id"
+                :link="leaf.link"
+                :labelTop="leaf.title"
+                :labelUnder="leaf.description"
+            />
+        </div>
     </div>
 </template>
 
@@ -25,6 +34,7 @@ export default Vue.extend({
     layout: 'tree',
     async asyncData({ $axios }) {
         const data = await $axios.$get('/api/v1/links/all')
+        console.log(data)
         return { data }
     },
 })
@@ -37,6 +47,13 @@ export default Vue.extend({
     min-height: 100vh;
     margin: auto;
     box-shadow: 0 0 15px rgba(0,0,0,.3);
+
+    .leafs {
+        width: 100%;
+        max-width: 450px;
+        margin: auto;
+        padding: 30px 15px 120px;
+    }
 }
 
 header {
@@ -82,7 +99,7 @@ span {
 
 .separator {
     display: block;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
     width: 30px;
     height: 2px;
