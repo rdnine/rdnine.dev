@@ -45,7 +45,7 @@ a {
     left: 0;
     right: 0;
     opacity: 1;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     color: #17242a;
     background-color: #feda6a;
     transition: all ease 250ms;
@@ -60,7 +60,7 @@ a {
     bottom: 0;
     right: 0;
     opacity: 0;
-    transform: scale(0.5,0.5);
+    transform: scale(0.5, 0.5);
     color: #feffff;
     background-color: #ef476f;
     transition: all ease 250ms;
@@ -70,11 +70,11 @@ a {
 
 a:hover .top {
     opacity: 0;
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 
 a:hover .under {
     opacity: 1;
-    transform: scale(1,1);
+    transform: scale(1, 1);
 }
 </style>
