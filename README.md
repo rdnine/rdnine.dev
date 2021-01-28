@@ -1,20 +1,30 @@
-# rdnine.dev
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://imgur.com/ukLbRPg.jpg" alt="Logo" width="80" height="80">
+  </a>
 
-## Build Setup
+  <h1 align="center">Welcome to my lifetime project</h1>
 
-```bash
-# install dependencies
-$ yarn install
+  <p align="center">
+    <br />
+    <a href="https://rdnine.dev">See the project</a>
+    ·
+    <a href="https://github.com/rdnine/rdnine.dev/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/rdnine/rdnine.dev/issues">Give some Ideas</a>
+  </p>
+</p>
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+### Built With
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+* [Vue](https://vuejs.org/)
+* [NuxtJS](https://nuxtjs.org/)
 
-# generate static project
-$ yarn generate
-```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@rdnine.dev](https://instagram.com/rdnine.dev) - rafael@rdnine.dev
+
+Project Link: [https://github.com/rdnine/rdnine.dev](https://github.com/rdnine/rdnine.dev)
