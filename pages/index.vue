@@ -1,9 +1,50 @@
 <template>
     <div id="index" class="min-h-screen flex mx-auto flex-col">
         <article>
-            <nuxt-content :document="data" />
+            <h1>Hello there 👋</h1>
+            <h2>I'm Rafael</h2>
+            <h3>
+                A web developer from 🇵🇹 <br />
+                I do magic on the web, one line of code at a time.
+            </h3>
+            <p>
+                In the mean time you can follow or reach me here:
+                <a
+                    href="https://links.rdnine.dev/"
+                    target="_blank"
+                    rel="noopener"
+                    title="Links"
+                >
+                    links.rdnine.dev
+                </a>
+            </p>
         </article>
-        <Footer :data="footer" />
+        <footer>
+            <p>
+                Powered by
+                <a
+                    href="https://vuejs.org/"
+                    target="_blank"
+                    rel="noopener"
+                    title="Vue it!"
+                >
+                    Vue
+                </a>
+                and built with
+                <a
+                    href="https://nuxtjs.org/"
+                    target="_blank"
+                    rel="noopener"
+                    title="The Intuitive Vue Framework"
+                >
+                    Nuxt
+                </a>
+                , because it's Nutx!
+            </p>
+            <p>
+                <small>what a corny joke 🤣</small>
+            </p>
+        </footer>
     </div>
 </template>
 
@@ -12,11 +53,6 @@ import Vue from 'vue'
 
 export default Vue.extend({
     layout: 'landing',
-    async asyncData({ $content }: any): Promise<object> {
-        const data = await $content('index').fetch()
-        const footer = await $content('footer').fetch()
-        return { data, footer }
-    },
 })
 </script>
 
