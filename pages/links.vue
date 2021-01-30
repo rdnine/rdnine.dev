@@ -81,6 +81,16 @@ import Vue from 'vue'
 
 export default Vue.extend({
     layout: 'tree',
+    head: {
+        title: 'Rafael Duarte | Link Tree',
+        meta: [
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'Where you can find me across the web!',
+            }
+        ]
+    },
     async asyncData({ $axios }) {
         const data = await $axios.$get('/api/v1/links/all')
         return { data }
