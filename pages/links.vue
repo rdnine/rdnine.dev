@@ -17,7 +17,7 @@
         </header>
         <div class="leafs">
             <LinksLeaf
-                v-for="leaf in data.links"
+                v-for="leaf in links"
                 :key="leaf.id"
                 :link="leaf.link"
                 :labelTop="leaf.title"
@@ -26,46 +26,15 @@
         </div>
         <footer>
             <ul class="social-list">
-                <li>
-                    <a
-                        href="https://instagram.com/rdnine.dev"
-                        target="_blank"
-                        rel="noopener"
-                    >
+                <li v-for="item in socials" :key="item.id">
+                    <a :href="item.link" target="_blank" rel="noopener">
                         <img
-                            src="/instagram.svg"
-                            alt="Instagram"
-                            title="Follow the adventure"
-                            width="50"
-                            height="50"
-                        />
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/rafaeljfduarte/"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            src="/linkedin.svg"
-                            alt="Linkedin"
-                            title="It's Professional"
-                            width="50"
-                            height="50"
-                        />
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="skype:rafaeljfduarte?call"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            src="/skype.svg"
-                            alt="Skype"
-                            title="Call me, mabye"
+                            :src="
+                                'https://core.rdnine.dev/public/storage/' +
+                                item.image
+                            "
+                            :alt="item.name"
+                            :title="item.description"
                             width="50"
                             height="50"
                         />
@@ -88,12 +57,14 @@ export default Vue.extend({
                 hid: 'description',
                 name: 'description',
                 content: 'Where you can find me across the web!',
-            }
-        ]
+            },
+        ],
     },
     async asyncData({ $axios }) {
-        const data = await $axios.$get('/api/v1/links/all')
-        return { data }
+        const { links } = await $axios.$get('/api/v1/links/all')
+        const { socials } = await $axios.$get('/api/v1/social/all')
+
+        return { links, socials }
     },
 })
 </script>
