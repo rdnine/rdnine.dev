@@ -61,8 +61,8 @@ export default Vue.extend({
         ],
     },
     async asyncData({ $axios }) {
-        const { links } = await $axios.$get('/api/v1/links/all')
-        const { socials } = await $axios.$get('/api/v1/social/all')
+        const { links } = await $axios.$get('/v1/links/all')
+        const { socials } = await $axios.$get('/v1/social/all')
 
         return { links, socials }
     },
