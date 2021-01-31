@@ -72,13 +72,8 @@ export default {
         '@nuxtjs/proxy',
     ],
 
-    proxy: {
-        '/api/': {
-            target: 'https://api.rdnine.dev/',
-            pathRewrite: {
-                '^/api/': '/',
-            },
-        },
+    axios: {
+        baseURL: 'https://api.rdnine.dev',
     },
 
     // Content module configuration (https://go.nuxtjs.dev/config-content)
