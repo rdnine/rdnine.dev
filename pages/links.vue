@@ -134,6 +134,7 @@ footer {
         object-fit: cover;
         object-position: center;
         border-radius: 50%;
+        border: 1px solid white;
     }
 }
 
