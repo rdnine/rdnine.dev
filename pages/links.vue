@@ -3,9 +3,11 @@
         <header>
             <div class="placeholder">
                 <img
-                    src="https://imgur.com/SCulelN.png"
+                    src="https://imgur.com/vcXk91R.png"
                     alt="Rafael Duarte"
                     title="Hey! It's me!"
+                    width="150"
+                    height="150"
                 />
             </div>
             <span class="text-2xl">@rdnine</span>
