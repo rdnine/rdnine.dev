@@ -52,6 +52,12 @@ import Vue from 'vue'
 
 export default Vue.extend({
     layout: 'tree',
+    async asyncData({ $axios }) {
+        const { links } = await $axios.$get('/v1/links/all')
+        const { socials } = await $axios.$get('/v1/social/all')
+
+        return { links, socials }
+    },
     head: {
         title: 'Rafael Duarte | Link Tree',
         meta: [
@@ -61,12 +67,6 @@ export default Vue.extend({
                 content: 'Where you can find me across the web!',
             },
         ],
-    },
-    async asyncData({ $axios }) {
-        const { links } = await $axios.$get('/v1/links/all')
-        const { socials } = await $axios.$get('/v1/social/all')
-
-        return { links, socials }
     },
 })
 </script>
