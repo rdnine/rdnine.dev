@@ -6,24 +6,30 @@
                 <h2>I'm Rafael</h2>
                 <h3>
                     A web developer from 🇵🇹 <br />
-                    I do magic on the web, one line of code at a time. <br /><br />
+                    I do magic on the web, one line of code at a time.<br /><br />
                     Don't worry, this is just temporary. <br />
                     Take a seat while I build my website.
                 </h3>
-                <p>
-                    In the mean time you can follow or reach me here:
-                </p>
+                <p>In the mean time you can follow or reach me here:</p>
                 <div class="mb-5"></div>
 
                 <ul>
-                    <li class="inline-block"><NuxtLink to="/links" class="link link__iris">links</NuxtLink></li>
+                    <li class="inline-block">
+                        <NuxtLink to="/links" class="link link__iris">
+                            links
+                        </NuxtLink>
+                    </li>
                 </ul>
-
-                
             </div>
         </article>
         <footer>
-            <img src="logo_w.png" width="50" height="60" alt="rdnine.dev | Web Developer" title="rdnine.dev | Logo">
+            <img
+                src="logo_w.png"
+                width="50"
+                height="60"
+                alt="rdnine.dev | Web Developer"
+                title="rdnine.dev | Logo"
+            />
             <div class="block h-16 w-full"></div>
             <p>
                 Powered by
