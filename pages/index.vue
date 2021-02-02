@@ -19,6 +19,11 @@
                             links
                         </NuxtLink>
                     </li>
+                    <li class="inline-block">
+                        <NuxtLink to="/cv" class="link link__iris">
+                            cv
+                        </NuxtLink>
+                    </li>
                 </ul>
             </div>
         </article>
