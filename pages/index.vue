@@ -1,5 +1,8 @@
 <template>
-  <div id="index" class="min-h-screen flex mx-auto flex-col">
+  <main
+    id="index"
+    class="min-h-screen p-16 md:p-12 max-w-screen-xl flex flex-col justify-start md:justify-center"
+  >
     <article>
       <div>
         <h1>Hello there 👋</h1>
@@ -49,22 +52,23 @@
           rel="noopener"
           title="The Intuitive Vue Framework"
         >
-          Nuxt
-        </a>
-        , because it's Nutx!
+        Nuxt
+        </a>,
+        <br />
+        because it's Nutx!
       </p>
-      <p>
+      <p class="mt-5">
         <small>what a corny joke 🤣</small>
       </p>
     </footer>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
-  layout: 'landing',
+  layout: 'fluid-dark',
 })
 </script>
 
@@ -73,25 +77,20 @@ export default Vue.extend({
   article {
     width: 100%;
     max-width: 500px;
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 
     @media screen and (max-height: 900px) {
-      min-height: 60vh;
-      margin-bottom: 30px;
+      margin-bottom: 90px;
     }
 
     @media screen and (max-width: 575px) {
-      justify-content: flex-start;
       margin-bottom: 60px;
     }
   }
 
   footer {
+    width: 100%;
+    max-width: 500px;
     margin-bottom: 30px;
   }
 
