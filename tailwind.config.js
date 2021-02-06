@@ -5,6 +5,11 @@ module.exports = {
       lighter: 'rgba(207, 219, 213, 1)',
       grey: 'rgba(51, 53, 51, 1)',
     }),
+    extend: {
+      height: {
+        '90c': '90%',
+      },
+    },
   },
   fontFamily: {
     display: ['Roboto Mono', 'sans-serif'],
