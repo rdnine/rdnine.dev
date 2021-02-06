@@ -48,7 +48,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  layout: 'tree',
+  layout: 'fluid-grey',
   async asyncData({ $axios }) {
     const { links } = await $axios.$get('/v1/links/all')
     const { socials } = await $axios.$get('/v1/social/all')
