@@ -52,8 +52,9 @@
           rel="noopener"
           title="The Intuitive Vue Framework"
         >
-        Nuxt
-        </a>,
+          Nuxt
+        </a>
+        ,
         <br />
         because it's Nutx!
       </p>
