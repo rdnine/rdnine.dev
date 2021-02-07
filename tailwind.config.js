@@ -9,6 +9,9 @@ module.exports = {
       height: {
         '90c': '90%',
       },
+      colors: {
+        'sublime-yellow': '#FEDA6A',
+      }
     },
   },
   fontFamily: {
