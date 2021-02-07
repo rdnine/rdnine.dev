@@ -1,6 +1,9 @@
 <template>
-  <main id="cv" class="w-full h-screen max-w-screen-xl mx-auto">
-    <aside class="absolute top-0 bottom-0 h-90c my-auto w-2/5 flex">
+  <main
+    id="cv"
+    class="w-full h-screen max-w-screen-xl mx-auto flex content-center"
+  >
+    <aside class="flex h-90c my-auto w-2/5 z-10">
       <div class="nav bg-dark w-32 h-90c my-auto relative">
         <div
           class="absolute top-0 w-full h-32 flex content-center justify-center"
@@ -45,6 +48,9 @@
         <div class="profile__info"></div>
       </div>
     </aside>
+    <section class="flex h-90c my-auto w-3/5">
+      <article class="w-full h-90c my-auto relative bg-dark"></article>
+    </section>
   </main>
 </template>
 
@@ -55,3 +61,9 @@ export default Vue.extend({
   layout: 'fluid-grey',
 })
 </script>
+
+<style lang="scss" scoped>
+.profile {
+  box-shadow: 2px ​2px 15px 5px rgba(0, 0, 0, 0.25);
+}
+</style>
