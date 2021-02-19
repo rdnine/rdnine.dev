@@ -91,4 +91,4 @@ sw.*
 *.swp
 
 # Zone Identifier
-*:Zone.Identifier
+*Zone.Identifier
