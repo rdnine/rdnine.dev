@@ -22,8 +22,8 @@
         v-for="leaf in links"
         :key="leaf.id"
         :link="leaf.link"
-        :labelTop="leaf.title"
-        :labelUnder="leaf.description"
+        :label-top="leaf.title"
+        :label-under="leaf.description"
       />
     </div>
     <footer>
